@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../StyleCss/style.css">
+</head>
+
+<body>
+
+
+    <!--nav-bar-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top  boxShadow bg-white">
+        <!--logo-->
+        <div class="container-fluid mx-3">
+            <a href="index.html" class="navbar-brand">
+                <img src="../img/Natal (1).png" alt="logo do site" id="logoSite">
+            </a>
+            <!--toggle e menu-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Menu-->
+
+            <div class=" collapse navbar-collapse mt-4 " id="navbarSupportedContent ">
+                <ul class="navbar-nav ms-auto  mb-lg-0">
+                    <li>
+                        <a class="nav-link " href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./planos.html">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary mx-3  " href="./inscrevase.html" id="btnSub">Inscreva-se</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../img/Natal.png" alt="" width="200" height="207">
+            
+          </div>
+      
+          <div class="row g-5">
+           
+            <div class="col-md-12 col-lg-12">
+              <h4 class="mb-3">Dados pessoais</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Primeiro nome</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                    
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Sobre nome</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                     
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="username" class="form-label">Nome de usuario</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <div class="invalid-feedback">
+                        Your username is required.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-muted">(opicional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Endereço/Rua</label>
+                    <input type="text" class="form-control" id="address" placeholder="Rua estrada nova 199" required="">
+                    <div class="invalid-feedback">
+                      Please enter your shipping address.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Endereço/Bairro<span class="text-muted">(Opicional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Bairro ">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">País</label>
+                    <select class="form-select"  required="" name="country">
+                      <option value="">Escolha</option>
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Estado</label>
+                    <select class="form-select" id="state" required="" name="cities">
+                      <option value="">Estado</option>
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Zip code required.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo que meu endereço de cobrança</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">Forma de pagamento</h4>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credit">Cartão de credito</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="debit">Cartão de débito</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nome no cartão</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                    <small class="text-muted"> </small>
+                    <div class="invalid-feedback">
+                      Numero do cartão de credito
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Numero do cartão de credito</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                    <div class="invalid-feedback">
+                        Numero do cartão é necessario
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Data de validade</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                    <div class="invalid-feedback">
+                        Código de Segurança
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      
+
+      </div>
+   
+    <section class="container-fluid bg-dark pre-footer mt-5">
+
+        <div class="container ">
+            <div class="row text-white">
+                <div class="col-lg-3 col-sm-6 mt-2">
+
+                    <div class="display-6 text-white">
+                        Inicio <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="./planos.html" class="link-primary">Planos</a> <br>
+                            <a href="./Contato.html" class="link-primary">contato</a> <br>
+                            <a href="./inscrevase.html" class="link-primary">Inscreva-se</a> <br>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        Locais <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="./galeria.html" class="link-primary">Natal</a> <br>
+                            <a href="./galeria.html" class="link-primary">São minguel</a> <br>
+                            <a href="./galeria.html" class="link-primary">Pipa</a> <br>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        contato <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="" class="link-secondary mt-1">RnAdventure@gmail.com</a> <br>
+                            <a href="" class="link-secondary mt-1">84 8888-8888</a> <br>
+                            <a href="" class="link-secondary mt-1">de seg a sex 8h as 19h</a> <br>
+
+                            <!--planos-->
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        Inicio <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="" class="btn btn-outline-secondary ">Facebook</a> <br>
+                            <a href="" class="btn btn-outline-secondary mt-1">twitter</a> <br>
+                            <a href="" class="btn btn-outline-secondary mt-1">Youtube</a> <br>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="container-fluid bg-primary p-2">
+        <div class="row  text-center text-white p-2">
+            <div class="col-12">
+                <p class="lead">Todos os direitos reservados ©</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <!--javascript -->
+    <script src="../js/country.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
