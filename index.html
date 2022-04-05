@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../StyleCss/style.css">
+</head>
+
+<body>
+    <!--nav-bar-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top  boxShadow bg-white">
+        <!--logo-->
+        <div class="container-fluid mx-3">
+            <a href="index.html" class="navbar-brand">
+                <img src="../img/Natal (1).png" alt="logo do site" id="logoSite">
+            </a>
+            <!--toggle e menu-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Menu-->
+
+            <div class="collapse navbar-collapse mt-4 " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link bg-sm-primary" href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./planos.html">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary mx-3  " href="./inscrevase.html" id="btnSub">Inscreva-se</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!--seção-1-->
+    <section class="container-fluid ">
+        <div class="row">
+
+
+            <div class="col-lg-7">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/PontaNegra.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/TibauDoSul.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/ship-gb71415b43_1280.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="col-lg-5 bg-dark ">
+                <h1 class="display-3 text-white p-5 mt-4">Seu sonho de conhecer as belezas do Rio grande do norte ficou
+                    mais facil</h1>
+                <p class="lead text-white fs-3 p-2 ">"A plataforma mais simples de conhecer as belezas potiguares" </p>
+                <div class="input-group btn-lg ">
+                    <input type="text" class="form-control " placeholder="Email" aria-label="Email">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            Inscreva-se
+                        </button>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Seção-2-->
+
+    <section class="py-5 bg-light text-center ">
+        <div class="container mt-5">
+            <span class="h4 d-block">TUDO PARA VOCÊ CURTIR SUAS FERIAS DE FORMA TRANQUILA</span>
+            <h2 class=" display-3 text-primary">Relaxe e deixe com a gente</h2>
+            <div class="row my-5 ">
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/passport.png" alt="...">
+                    <h3 class="my-3">Documentação facilitada</h3>
+                    <p class="lead">Nossa plataforma oferece facilidade em acomodagem e alugueis de casa</p>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/beach.png" alt="...">
+                    <h3 class="my-3">Destinos maravilhosos</h3>
+                    <p class="lead">Pronto para conhercer os locais mais fantasticos do nosso estado?</p>
+
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/4x4.png" alt="...">
+                    <h3 class="my-3">Translado de jeep</h3>
+                    <p class="lead">Temos parcerias com empresas de jeeps para você curtir nossas locais de dunas</p>
+                </div>
+
+
+
+
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/diploma.png" alt="...">
+                    <h3 class="my-3">Segurança garantida</h3>
+                    <p class="lead">Todos os nosso parceiros foram criteriosamente selecionados, fique tranquilo com
+                        relação a isso.</p>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/boat.png" alt="...">
+                    <h3 class="my-3">Nossos planos de cruzeiro</h3>
+                    <p class="lead">Tem vontade de fazer um cruzeiro? Em familia ou sozinho nós oferecemos a melhor
+                        opção para você</p>
+
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <img src="../icons/camelo.png" alt="...">
+                    <h3 class="my-3">Passeio de dromedários</h3>
+                    <p class="lead">Nosso team fechou parceria com dromedarios & cia, venha se deliciar com nossos
+                        passeios</p>
+                </div>
+            </div>
+            <a href="./planos.html" class="btn btn-primary mt-4 btn-lg d-grid gap-2 col-6 mx-auto">Escolha seu plano</a>
+
+
+
+
+        </div>
+        <!--Seção 3 blockquote-->
+        <section class="home-quote container-fluid mt-5 p-5">
+            <blockquote class="blockquote text-white p-5">
+                <em>
+                    <p class="display-3 p-5 "> Eu não estive em todos os lugares, mas está na minha lista</p>
+                </em>
+                <footer class="blockquoteofooter display-5">-Susan Sontag</footer>
+            </blockquote>
+
+        </section>
+
+
+    </section>
+
+    <!--section 4 duvidas-->
+    <section class=" container text-center ">
+        <div class="my-5 p-5">
+            <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+            <h2 class="display-4 text-primary">perguntas frequentes</h2>
+
+            <div class="row ">
+                <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item lead">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed lead" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Como cancelar a viagem?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne " class="accordion-collapse collapse "
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body lead">
+                                    <p>Caso queira cancelar a viagem e pedir reembolso, sem custos, o contato com a
+                                        companhia aérea deve ser feito em até 24 horas a partir do recebimento do seu
+                                        comprovante de compra. Essa regra se aplica desde que a compra tenha sido
+                                        realizada com antecedência de pelo menos sete dias em relação ao voo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed lead type=" button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Como garantir meu plano no site
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body lead">
+                                    <p>Pesquise a área de planos e faça todo o procedimento até a finalização</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed lead" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Politica de reembolso
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body lead">
+                                        <p>
+                                            Você tem o prazo de 7 dias para se arrepender de compras feitas por
+                                            reembolso postal, por telefone ou à domicílio. Preste atenção, pois este
+                                            prazo é contado a partir da assinatura do contrato ou do recebimento do
+                                            produto ou serviço. No caso de arrependimento, você deverá devolver o
+                                            produto ou mandar parar o serviço.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="lead my-5">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" href="./Contato.html" >Entre em contato
+
+            </a>
+
+    </section>
+    <!--Seção 5 pre-footer-->
+    <section class="container-fluid bg-dark pre-footer">
+
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-lg-3 col-sm-6 mt-2">
+
+                    <div class="display-6 text-white">
+                        Inicio <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="./planos.html" class="link-primary">Planos</a> <br>
+                            <a href="./Contato.html" class="link-primary">contato</a> <br>
+                            <a href="./inscrevase.html" class="link-primary">Inscreva-se</a> <br>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        Locais <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="./galeria.html" class="link-primary">Natal</a> <br>
+                            <a href="./galeria.html" class="link-primary">São minguel</a> <br>
+                            <a href="./galeria.html" class="link-primary">Pipa</a> <br>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        contato <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="" class="link-secondary mt-1">RnAdventure@gmail.com</a> <br>
+                            <a href="" class="link-secondary mt-1">84 8888-8888</a> <br>
+                            <a href="" class="link-secondary mt-1">de seg a sex 8h as 19h</a> <br>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="display-6 text-white">
+                        Inicio <br>
+                        <div class="lead link-primary mt-2">
+                            <a href="" class="btn btn-outline-secondary ">Facebook</a> <br>
+                            <a href="" class="btn btn-outline-secondary mt-1">twitter</a> <br>
+                            <a href="" class="btn btn-outline-secondary mt-1">Youtube</a> <br>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!--Footer final-->
+    <footer class="container-fluid bg-primary p-2">
+        <div class="row  text-center text-white p-2">
+            <div class="col-12">
+                <p class="lead">Todos os direitos reservados &#169;</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+<!--javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
